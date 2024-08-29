@@ -1,0 +1,39 @@
+.graphs{
+    display: flex;
+    height: 250px;
+}
+.analyticpage{
+    display: flex;
+    flex-direction: column;
+}
+.analyticpage-container{
+    display: flex;
+    overflow-y: hidden !important;
+}
+@media screen and (max-width: 570px){
+    .graphs{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        margin-left: 50px;
+    }
+    .analyticpage{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        
+    }
+    .box{
+        height: 200px;
+        background: transparent;
+    }
+    #chartdiv{
+        margin-top: 500px;
+        width: 80% !important;
+        height: 400px !important;
+        margin-left: 50px;
+    }
+    .analyticpage-container{
+        width: 100vw;
+    }
+}

@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.dashboard-container{
+    display: flex;
+    flex-direction: row;
+}
+.dashboard{
+        height: auto;
+        width: calc(100% - 30px);
+        margin: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: start;
+        justify-content: start;
+}
+.dashboard-profile{
+    width: 600px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 20px;
+    margin: 100px 25px;
+}
+.weekly-progress{
+    width: 250px;
+    height: 350px;
+    /* box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.20); */
+    border-radius: 25px;
+    margin-left: 0px;
+}
+.dashboard-heading{
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 70px;
+    color: rgb(0, 35, 79);
+}
+.dashboard-paragraph{
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 20px;
+    color: rgba(0, 15, 32, 0.76);
+}
+.error-masg{
+    /* background-color: #C6E5FF;
+    color: #19215C; */
+    background-color: #FFE0DB;
+    color: #FF694F;
+    font-size: 18px;
+    font-family: Inter;
+    font-weight: 600;
+    border-radius: 10px;
+    display: flex;
+    padding: 10px;
+}
+.info-icon{
+    padding: 3px 10px;
+}
+@media screen and (max-width: 600px){
+    .dashboard-profile{
+        width: 320px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        padding: 20px;
+        margin: 100px 5px 0px 5px;
+    }
+    .weekly-progress{
+        width: 250px;
+        height: 350px;
+        border: 2px solid rgba(0, 0, 110, 0.5);
+        border-radius: 25px;
+        margin: 25px;
+        display: none;
+    }
+    .dashboard-heading{
+        font-family: Inter;
+        font-weight: 600;
+        font-size: 30px;
+        color: rgb(0, 35, 79);
+    }
+    .dashboard-paragraph{
+        font-family: Inter;
+        font-weight: 500;
+        font-size: 15px;
+        color: rgba(0, 15, 32, 0.76);
+    }
+    .error-masg{
+
+        font-size: 11px;
+        font-family: Inter;
+        font-weight: 600;
+        border-radius: 10px;
+        margin: 10px;
+        display: flex;
+        padding: 10px;
+    }
+    .info-icon{
+        padding: 3px 10px;
+        font-size: 20px;
+    }
+}

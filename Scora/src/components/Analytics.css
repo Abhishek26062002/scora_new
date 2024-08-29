@@ -1,0 +1,29 @@
+.box{
+    background-color: white;
+    width: 245px;height: 345px;
+    align-items: center;
+    border-radius: 30px;
+  }
+.progress-para{
+  font-size: 14px;
+  color: #333;
+  text-align: center;
+  font-weight: 600;
+  color: rgb(0, 35, 79);
+}
+.graphs-container {
+  display: flex;
+  justify-content: space-between; /* Space out the graphs evenly */
+  flex-wrap: wrap; /* Wrap to the next line if needed */
+  margin: -10px; /* Compensate for the margin added to child elements */
+}
+
+.box {
+  margin: 10px; /* Margin between each graph */
+  flex: 1; /* Ensure boxes grow equally */
+  min-width: 0; /* Prevent flex items from shrinking too much */
+}
+
+  
+
+

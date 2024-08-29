@@ -1,0 +1,235 @@
+.add-container{
+    display: flex;
+    flex-direction: row;
+}
+.add{
+        height: calc(100vh - 30px);
+        width: calc(100% - 30px);
+        margin: 15px;
+        overflow-y: scroll;
+}
+.add-paragraph{
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 25px;
+    background-image: linear-gradient(90deg, rgba(24,31,88,1) 17%, rgba(67,83,205,1) 92%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.drop-zone {
+    max-width: 200px;
+    height: 200px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    cursor: pointer;
+    color: #cccccc;
+    border: 4px dashed #009578;
+    border-radius: 10px;
+  }
+  
+  .drop-zone--over {
+    border-style: solid;
+  }
+  
+  .drop-zone__input {
+    display: none;
+  }
+  
+  .drop-zone__thumb {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #cccccc;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .drop-zone__thumb::after {
+    content: attr(data-label);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 0;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.75);
+    font-size: 14px;
+    text-align: center;
+  }
+  .add-container {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .add {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+
+  .form-section {
+    margin-top: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .generate-button, .add-more-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(180deg, rgba(24,31,88,1) 0%, rgba(51,67,190,1) 100%);
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+  }
+  
+  .generate-button:hover {
+    background: linear-gradient(180deg,  rgba(51,67,190,1) 0%, rgba(24,31,88,1) 100%);
+  }
+  
+  .drop-zone {
+    max-width: 100%;
+    padding: 20px;
+    border: 2px dashed #ddd;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    color: #999;
+    cursor: pointer;
+    background-color: #fdfdfd;
+    position: relative;
+  }
+  
+  .drop-zone--over {
+    background-color: #e6f7ff;
+    border-color: #007bff;
+  }
+  
+  .drop-zone__input {
+    display: none;
+  }
+  
+  .drop-zone__prompt {
+    margin-bottom: 0;
+  }
+  
+  .drop-zone__thumb {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+  
+  .drop-zone__thumb::after {
+    content: attr(data-label);
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  .form-button{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .popup-close-button,
+  .popup-view-button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    background: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .popup-close-button:hover {
+    background: #0056b3;
+  }
+
+  .popup-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+  
+ 
+  .popup-done-button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    background: #28a745;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .popup-done-button:hover {
+    background: #218838;
+  }
+  
+  .popup-content ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .popup-content ul li {
+    margin: 10px 0;
+    font-size: 16px;
+  }

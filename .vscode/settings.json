@@ -1,0 +1,41 @@
+{
+    "sqltools.connections": [
+        {
+            "pgOptions": {
+                "ssl": {
+                    "rejectUnauthorized": true
+                }
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "driver": "PostgreSQL",
+            "name": "Abhishek",
+            "connectString": "postgresql://scora_user:08Ou51w7zqeZ1jOQhVyK5mqpyGYvxnRV@dpg-cqkhp4aj1k6c73fr36dg-a.oregon-postgres.render.com/scora"
+        },
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5435,
+            "driver": "PostgreSQL",
+            "name": "scora",
+            "group": "scora",
+            "username": "postgres",
+            "database": "scora"
+        },
+        {
+            "pgOptions": {
+                "ssl": {
+                    "rejectUnauthorized": true,
+                    "ca": "C:\\Users\\abhishek\\Downloads\\ca.pem"
+                }
+            },
+            "previewLimit": 50,
+            "server": "scora-scora.h.aivencloud.com",
+            "driver": "PostgreSQL",
+            "name": "Scora-cloud",
+            "connectString": "postgres://avnadmin:AVNS_lzJsq0hZSifN3XBhCQj@scora-scora.h.aivencloud.com:12159/defaultdb?sslmode=require",
+            "database": "defaultdb",
+            "username": "avnadmin"
+        }
+    ]
+}

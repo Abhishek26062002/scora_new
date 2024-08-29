@@ -1,0 +1,85 @@
+.admin-container{
+    display: flex;
+    flex-direction: row;
+}
+.admin{
+        height: auto;
+        width: calc(100% - 30px);
+        margin: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: start;
+        justify-content: start;
+}
+.admin-profile{
+    width: 600px;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding-top: 60px;
+     
+}
+.admin-paragraph{
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 20px;
+    color: rgba(0, 15, 32, 0.76);
+}
+
+  h2 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  table, th, td {
+    border: 1px solid #ddd;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .delete-button {
+
+    color: rgb(0, 3, 57);
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+
+  
+  .add-more-button {
+    background: linear-gradient(180deg, rgba(24,31,88,1) 0%, rgba(51,67,190,1) 100%);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: ease 5s;
+  }
+  
+  .add-more-button:hover {
+    background: linear-gradient(180deg,  rgba(51,67,190,1) 0%, rgba(24,31,88,1) 100%);
+  }
